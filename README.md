@@ -1,3 +1,35 @@
+# Recipe App
+
+## Overview
+
+This is a **Recipe Application** built using **Next.js**, **React**, **TypeScript**, and **Axios**. It allows users to explore a variety of recipes, view recipe details, and navigate between categories based on recipe difficulty. The app fetches data from a public API (DummyJSON Recipes API) to display a list of recipes.
+
+### Features
+- View a list of recipes with details (ingredients, instructions, rating, etc.).
+- Navigate recipes by their difficulty (Easy, Medium, Hard).
+- View recipe details in a detailed view, including ingredients and instructions.
+- Responsive design with styling via **Tailwind CSS**.
+
+---
+
+## Prerequisites
+
+Before you begin, make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/) (Node package manager, installed automatically with Node.js)
+
+---
+
+## Installation
+
+### 1. Clone the repository
+
+Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/your-username/recipe-app.git
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
