@@ -7,6 +7,13 @@ import { useEffect } from 'react';
 export default function RecipeTable() {
   const { recipes, fetchRecipes } = useRecipes();
 
+  /**
+   * `useEffect` hook that fetches recipes if the `recipes` array is empty.
+   * @useEffect
+   * @param {Array} recipes - The current list of recipes in the state.
+   * @param {Function} fetchRecipes - The function used to fetch recipes from the API.
+   * @returns {void} This hook does not return any value. It only triggers side effects (fetching recipes when necessary).
+   */
   useEffect(() => {
     if (recipes.length === 0) {
       fetchRecipes();

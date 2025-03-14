@@ -1,29 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Search } from "lucide-react"
-import { useRecipes } from '@/context/recipesContext/recipesContext'
 import Sidebar from "@/components/Shared/Sidebar"
 import Link from "next/link"
-import RecipeTable from './recipe-tables'
+import RecipeTable from './recipeTable'
 import Footer from '@/components/Shared/Footer'
 
 export default function RecipeMain() {
-  const { recipes, fetchRecipes } = useRecipes();
-
-  /**
-   * `useEffect` hook that fetches recipes if the `recipes` array is empty.
-   * This effect runs whenever the `recipes` state or the `fetchRecipes` function changes. 
-   * If the `recipes` array is empty, it triggers the `fetchRecipes` function to fetch recipes from the API.
-   * This ensures that recipes are only fetched when necessary (i.e., when the `recipes` state is empty).
-   * @param {Array} recipes - The current list of recipes.
-   * @param {function} fetchRecipes - Function that fetches recipes from the API.
-   * @returns {void} This hook does not return a value, it only runs side effects.
-   */
-  useEffect(() => {
-    if (recipes.length === 0) {
-      fetchRecipes();
-    }
-  }, [recipes, fetchRecipes]);
-
   return (
     <div className="flex flex-col min-h-screen">
       <header className="border-b p-4 flex justify-between items-center">
